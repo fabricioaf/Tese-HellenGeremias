@@ -1034,7 +1034,7 @@ T2<-merge(overunder_T2,mun_code,by="Municipality_code")
 write.table(T2,"3tertile.csv",row.names = FALSE,dec = ".",sep = ";")
 ```
 
-# Graph: CV risk with mean and square error associated to each candidate algorithm
+# Graph: CV risk with mean and squared error associated to each candidate algorithm
 ```{r}
 #Figure 1
 data_cv_risk<-read.csv2("Data_cv_risk.csv",header=TRUE)
