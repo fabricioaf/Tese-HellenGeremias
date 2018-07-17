@@ -1,5 +1,5 @@
 ---
-title: "Life_Expectance_SL_prediction"
+title: "Life_Expectancy_SL_prediction"
 author: "Hellen Geremias dos Santos"
 date: "4 de maio de 2018"
 output: html_document
@@ -19,7 +19,7 @@ library(plyr)
 library(RhpcBLASctl)
 ```
 
-# Data set to develop predictive life expectance model
+# Data set to develop predictive life expectancy model
 ```{r}
 data_set1 <- read.table ("Data_set_socioeconomic_characteristics.csv", 
                      header = T ,sep=';', dec='.',colClass=c(rep("numeric",37), "factor"))
