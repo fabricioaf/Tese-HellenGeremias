@@ -270,7 +270,8 @@ n = nrow(data_training)
 i = 1
 for (i in 1:n) {
      teste[i] <- is.na(data_training$imc_novo[i])
-     ifelse (teste[i] == TRUE, data_training$imc_novo_imp[i] <- mediana_IMC, data_training$imc_novo_imp[i] <- data_training$imc_novo[i])
+     ifelse (teste[i] == TRUE, data_training$imc_novo_imp[i] <- mediana_IMC,
+             data_training$imc_novo_imp[i] <- data_training$imc_novo[i])
 }
 
 X_1 <- select(data_training, -c(morte_5anos, imc_novo, idade, imc_novo_imp))
@@ -295,7 +296,8 @@ n = nrow(data_teste)
 i = 1
 for (i in 1:n) {
      teste[i] <- is.na(data_teste$imc_novo[i])
-     ifelse (teste[i] == TRUE, data_teste$imc_novo_imp[i] <- mediana_IMC, data_teste$imc_novo_imp[i] <- data_teste$imc_novo[i])
+     ifelse (teste[i] == TRUE, data_teste$imc_novo_imp[i] <- mediana_IMC,
+             data_teste$imc_novo_imp[i] <- data_teste$imc_novo[i])
 }
 
 X1_holdout = select(data_teste, -c(morte_5anos, imc_novo, idade, imc_novo_imp))
