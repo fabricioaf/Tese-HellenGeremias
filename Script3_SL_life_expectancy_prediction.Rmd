@@ -50,7 +50,7 @@ df_State <- dummy(State, sep = "_")
 df_State <- as.data.frame(df_State)
 head(df_State)
 
-#final_data
+#Final data
 final_data <- cbind(quantis$Municipality_code, quantis$Life_expectancy, quantis_scale, dplyr::select(df_State, -State_SP))
 names(final_data)[1] <- "Municipality_code"
 names(final_data)[2] <- "original_LE"
@@ -67,7 +67,8 @@ head(final_data_sort)
 
 - Step 1: combining Super Learner with the caret package
 ```{r}
-#Observations: the SuperLearner package provides the function SL.caret which allows you to include algorithms in the Super Learner that implicitly use cross-validation.
+#Observations: the SuperLearner package provides the function SL.caret which allows you to include 
+#algorithms in the Super Learner that implicitly use cross-validation.
 #I used a slight modification to this function, wrote by David Benkeser(http://benkeser.github.io/sllecture/).
 #Additionally, I modified "tuneLength" to "tuneGrid" and, for neural network, I add "linout = TRUE" when regression is of interest.
 
@@ -1053,7 +1054,7 @@ mse_RF_3
 
 ```
 
-# Top 100 under and over for each tertile
+# Top 100 under and over for each tercile
 ```{r}
 mun_code <- read.csv2("mun_code.csv", header = TRUE)
 
