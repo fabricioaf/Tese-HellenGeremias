@@ -958,7 +958,7 @@ data_test <- select(data_list[[j]], -c(index_SL, Illiteracy_rate))
   
 X_test <- select(data_test, -Life_expectancy)
 
-Y_test <- data_teste$Life_expectancy
+Y_test <- data_test$Life_expectancy
   
 testData <- cbind(Y_test, X_test)
   
