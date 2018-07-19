@@ -1,6 +1,6 @@
 # Tese-HellenGeremias
 
-This repository contains R codes elaborated for the analysis presented in my thesis entitled
+This repository contains R codes elaborated for the analyzes presented in my thesis entitled
 "Machine Learning for predictive health analyzes: challenges and perspectives" (under development).
 
 1) The first article is a tutorial for the use of ML in health research, using as example the prediction of death up to 5 years
@@ -14,6 +14,6 @@ basic decision trees, gradient boosted trees and random forest)
 were used in conjunction with nested cross validation (leave-one-out cross validation for the outer loop 
 and 10-fold cross validation for the inner loop).
 
-3) The third article aimed to predict life expectance at birth of Brazilian municipalities with more than 10,000 inhabitants 
+3) The third article aimed to predict life expectancy at birth of Brazilian municipalities with more than 10,000 inhabitants 
 using socioeconomic and demographic characteristics. For this analysis we used nested cross validation 
 (10-fold cross validation both for outer and inner loop) and the Super Learner algorithm.
